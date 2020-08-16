@@ -1,0 +1,76 @@
+@charset "UTF-8";
+body{
+    margin: 0;
+    font-family: 'メイリオ','Hiragino Kaku Gothic Pro', sans-serif;
+}
+
+/*基本グリッドレイアウト*/
+.post *{
+    margin: 0;
+}
+
+.post img{
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+.post-series img{
+    max-width: 30px;
+}
+.shop img{
+    max-width: 100px;
+}
+
+.post {
+    display: grid;
+    grid-template-columns: 20px 1fr 50px 1fr 20px;
+    grid-template-rows: auto 30px auto 40px auto 30px auto;
+}
+
+.post-head{
+    grid-column: 2 / -2;
+    grid-row: 1;
+}
+
+.sec01{
+    grid-column: 2/-2;
+    grid-row: 3;
+    display:grid;
+    
+}
+
+
+.sec02{
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.sec03{
+    grid-column: 4;
+    grid-row: 5;
+    
+}
+
+.post-foot{
+   grid-column: 1 / -1;
+    grid-row: -2;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    
+}
+
+
+.post img{
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+.post-series img{
+    max-width: 100px;
+}
+.shop img{
+    max-width: 100px;
+}
